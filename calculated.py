@@ -1,7 +1,17 @@
-def calculated(d):
-    q = 3.14
-    z = q * (d ** 2)
-    print(z)
+import math
 
+
+def calculate_circle_area(diameter):
+    # 1. Calculamos el radio del círculo (el radio es exactamente la mitad del diámetro).
+    radius = diameter / 2
+
+    # 2. Aplicamos la fórmula del área del círculo: Pi multiplicado por el radio al cuadrado (π * r²).
+    area = math.pi * (radius**2)
+
+    # 3. Mostramos el resultado del área en la pantalla.
+    print(area)
+
+
+# Esta línea le dice a Python: "Si ejecutas este archivo directamente, ¡empieza aquí!"
 if __name__ == "__main__":
-    calculated(1)
+    calculate_circle_area(1)
